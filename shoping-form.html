@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="mycss/stylesheet-shoping-form.css">
+    <title>SHOPPING</title>
+</head>
+
+<body class="body" style="background-image:url(Images/image49.JPG);">
+    <div class="container">
+        <div class="menu-bar">
+            <ul>
+                <li><a href="index.html">Home</i></a>
+                    <div class="sub-home">
+                        <ul>
+                            <li><a href="index.html#about-us">About Us</a></li>
+                            <li><a href="index.html#our-services">Our Services</a></li>
+                            <li><a href="index.html#images">Images</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="items-page.html">Items Page</a></</li> 
+				<li class="active"><a href="shoping-form.html">Online Shoping form</a></</li>
+				<li><a href="contact-us-page.html">Contact Us</a></</li> </ul> 
+		</div>
+		<div class="table">
+                    <br>
+                    <table id="table-content">
+                        <tr id="thead">
+                            <th>LANGUAGES</th>
+                            <th>CERTIFICATION TYPE</th>
+                            <th>QUANTITY</th>
+                            <th>COST</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="item1" name="item1" onclick="item1CheckBox()">
+                                <label for="item1"> ENGLISH LANGUAGE</label><br>
+                            </td>
+                            <td>
+                                <input type="radio" id="pr1" name="propertyitem1" value="500"
+                                    onclick="item1RadioChange(this);">
+                                <label for="pr1"> Communication in English (500$)</label><br>
+                                <input type="radio" id="pr2" name="propertyitem1" value="870"
+                                    onclick="item1RadioChange(this);">
+                                <label for="pr2">Communication and Writing in English (870$)</label><br>
+                            </td>
+                            <td>
+                                <select id="noofunitsitem1" onchange="item1Change()">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <p id="totalcostitem1">0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="item2" name="item2" onclick="item2CheckBox()">
+                                <label for="item2">ARABIC LANGUAGE</label><br>
+                            </td>
+                            <td>
+                                <input type="radio" id="pr1item2" name="propertyitem2" value="690"
+                                    onclick="item2RadioChange(this);">
+                                <label for="pr1item2">Communication in English(690$)</label><br>
+                                <input type="radio" id="pr2item2" name="propertyitem2" value="490"
+                                    onclick="item2RadioChange(this);">
+                                <label for="pr2item2">Communication and Writing in English(490$)</label><br>
+                            </td>
+                            <td>
+                                <select id="noofunitsitem2" onchange="item2Change()">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <p id="totalcostitem2">0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="item3" name="item3" onclick="item3CheckBox()">
+                                <label for="item3"> TURKISH LANGUAGE</label><br>
+                            </td>
+                            <td class="std">
+                                <input type="radio" id="pr1item3" name="propertyitem3" value="350"
+                                    onclick="item3RadioChange(this);">
+                                <label for="pr1item3">Communication in Turkish (350$)</label><br>
+                                <input type="radio" id="pr2item3" name="propertyitem3" value="400"
+                                    onclick="item3RadioChange(this);">
+                                <label for="pr2item3">Communication and Writing in Turkish (400$)</label><br>
+                            </td>
+                            <td>
+                                <select id="noofunitsitem3" onchange="item3Change()">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <p id="totalcostitem3">0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="item4" name="item4" onclick="item4CheckBox()">
+                                <label for="item4"> GREEK LANGUAGE</label><br>
+                            </td>
+                            <td>
+                                <input type="radio" id="pr1item4" name="propertyitem4" value="90"
+                                    onclick="item4RadioChange(this);">
+                                <label for="pr1item4">Communication in Greek(90$)</label><br>
+                                <input type="radio" id="pr2item4" name="propertyitem4" value="190"
+                                    onclick="item4RadioChange(this);">
+                                <label for="pr2item4">Communication and Writing in Greek(190$)</label><br>
+                            </td>
+                            <td>
+                                <select id="noofunitsitem4" onchange="item4Change()">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <p id="totalcostitem4">0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="item5" name="item5" onclick="item5CheckBox()">
+                                <label for="item5">GERMAN LANGUAGE</label><br>
+                            </td>
+                            <td>
+                                <input type="radio" id="pr1item5" name="propertyitem5" value="90"
+                                    onclick="item4RadioChange(this);">
+                                <label for="pr1item5">Communication in German(90$)</label><br>
+                                <input type="radio" id="pr2item5" name="propertyitem5" value="190"
+                                    onclick="item5RadioChange(this);">
+                                <label for="pr2item5">Communication and Writing in Greek(190$)</label><br>
+                            </td>
+                            <td>
+                                <select id="noofunitsitem5" onchange="item5Change()">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <p id="totalcostitem5">0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="item6" name="item6" onclick="item6CheckBox()">
+                                <label for="item6"> FRENCH LANGUAGE</label><br>
+                            </td>
+                            <td>
+                                <input type="radio" id="pr1item6" name="propertyitem6" value="90"
+                                    onclick="item6RadioChange(this);">
+                                <label for="pr1item6">Communication in French(90$)</label><br>
+                                <input type="radio" id="pr2item6" name="propertyitem6" value="190"
+                                    onclick="item6RadioChange(this);">
+                                <label for="pr2item6">Communication and Writing in French(190$)</label><br>
+                            </td>
+                            <td>
+                                <select id="noofunitsitem" onchange="item6Change()">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <p id="totalcostitem6">0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="item7" name="item7" onclick="item7CheckBox()">
+                                <label for="item7"> SPANISH LANGUAGE</label><br>
+                            </td>
+                            <td>
+                                <input type="radio" id="pr1item7" name="propertyitem7" value="90"
+                                    onclick="item7RadioChange(this);">
+                                <label for="pr1item7">Communication in Spanish(90$)</label><br>
+                                <input type="radio" id="pr2item7" name="propertyitem7" value="190"
+                                    onclick="item7RadioChange(this);">
+                                <label for="pr2item7">Communication and Writing in Spanish(190$)</label><br>
+                            </td>
+                            <td>
+                                <select id="noofunitsitem7" onchange="item7Change()">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <p id="totalcostitem7">0</p>
+                            </td>
+                        </tr>
+                        <tr class="str">
+                            <td colspan="2">TOTAL COST (After 15% discount)</td>
+                            <td><button onclick="calculateTotalCostAfterDiscount()">CALCULATE</button></td>
+                            <td>
+                                <p id="totalcostafterdiscount">0</p>
+                            </td>
+                        </tr>
+                    </table>
+        </div>
+        <script src="javascript/shoping-form.js"></script>
+</div>
+</body>
+</html>

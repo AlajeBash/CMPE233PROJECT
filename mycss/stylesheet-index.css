@@ -1,0 +1,120 @@
+	*{
+		padding:0;
+		margin:0;
+		box-sizing: border-box;
+	}
+	.body{
+		background-image:url(Images/Home-background.JPG);
+		background-color: GrayText;
+		background-size: cover;
+		background-position: center;
+		font-family: sans-serif;
+	}
+
+	.menu-bar{
+		background-color: rgb(0,100,0);
+		text-align: center;
+		color:#fff;
+		
+	}
+	
+	.menu-bar ul{
+		display: inline-flex;
+		list-style: none;
+		color: #fff;
+	}
+	
+	.menu-bar ul li{
+		max-width: 300px;
+		margin: auto;
+		padding: 15px;
+	}
+	
+	.menu-bar ul li a{
+		text-decoration: none;
+		color: #fff;
+	}
+	
+	.active, .menu-bar ul li:hover{
+		background: #2bab0d;
+		border-radious: 3px;
+	}
+	
+	.sub-home{
+		display: none;
+	}
+	
+	.menu-bar ul li:hover .sub-home{
+		display: block;
+		position: absolute;
+		background: rgb(0,100,0);
+		margin-top: 15px;
+		margin-left: -15px;
+		
+	}
+	
+	.menu-bar ul li:hover .sub-home ul{
+		display: block;
+		margin:10px;
+	}
+		
+	.menu-bar ul li:hover .sub-home ul li{
+		width: 150px;
+		padding: 10px;
+		border-bottom:1px dotted #fff;
+		background: transparent;
+		border-radious:0;
+		text-align: left;
+	}
+	
+	.menu-bar ul li:hover .sub-home ul li:last-child{
+		border-bottom: none;
+	}
+	
+	.menu-bar ul li:hover .sub-home ul li a:hover{
+		color:#b2ff00;
+	}
+	
+	.main{
+		max-width: 1170px;
+		max-height: 5000%;
+		margin:auto;	
+	}
+	
+	.about-us{
+		max-width: 1000px;
+		margin: auto;
+		padding: 20px;
+	}
+	.our-services{
+		max-width: 1000px;
+		margin: auto;
+		padding: 20px;
+	}
+	h1{
+		font-family: Arial (sans-serif), Georgia (serif);
+		font-size: 26px;
+		color: #1023AE;
+		padding: 10px;
+	}
+	p, ul{
+		font-family: Trebuchet MS (sans-serif), Times New Roman (serif);
+		font-size: 20px;
+		color: #FF0000;
+		padding: 30px;
+		list-style: none;
+	}
+	
+		img{
+		width:100%;
+	}
+	.Image-container{
+		width:40%;
+		float: left;
+		margin-right:40px;
+		margin-left:30px;
+		padding:20px;
+	}
+	img{
+		height:350px;
+	}
